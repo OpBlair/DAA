@@ -1,10 +1,10 @@
-def quicksort(arr, low, high):
+def quick_sort(arr, low, high):
     if low < high:
         #partition
         pi = partition(arr, low, high)
         #recurse
-        quicksort(arr, low, pi - 1)
-        quicksort(arr, pi + 1, high)
+        quick_sort(arr, low, pi - 1)
+        quick_sort(arr, pi + 1, high)
 def partition(arr, low, high):
     pivot = arr[high]
     i = low - 1
@@ -17,6 +17,6 @@ def partition(arr, low, high):
     
 array = [64, 34, 25, 12, 22, 11, 90]
 
-quicksort(array, 0, len(arr) - 1)
+quick_sort(array, 0, len(array) - 1)
 
 print(array)
