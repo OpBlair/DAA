@@ -21,3 +21,10 @@ for i in range(1, len(arr3)-1):
     if minimum_element <= arr3[i+1]:
         minimum_element = arr3[i]
 print(f"Minimum Element in {arr3} is {minimum_element}")
+
+#Recursion
+arr4 = [1, 2, 3, 4, 5]
+sum = 0
+for a in range(len(arr4)-1):
+	sum += arr4[a]
+print(f"Sum of elements in {arr4} = {sum}")
