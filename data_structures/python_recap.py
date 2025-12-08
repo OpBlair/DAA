@@ -17,17 +17,19 @@ print(word_count)
 #Minimum element
 arr3 = [2,3,5,6,1,10]
 minimum_element = arr3[0]
-for i in range(1, len(arr3)-1):
-    if minimum_element <= arr3[i+1]:
-        minimum_element = arr3[i]
+for x in arr3:
+    if x < minimum_element:
+        minimum_element = x
 print(f"Minimum Element in {arr3} is {minimum_element}")
 
 #Recursion
+def recursive_sum(arr):
+    if len(arr) == 0:
+        return 0
+    return arr[0] + recursive_sum(arr[1:])
+
 arr4 = [1, 2, 3, 4, 5]
-sum = 0
-for a in range(len(arr4)-1):
-	sum += arr4[a]
-print(f"Sum of elements in {arr4} = {sum}")
+print(f"Sum of elements in {arr4} = {recursive_sum(arr4)}")
 
 #Stable partition
 arr5 = [3, -1, 4, -2, 5]
