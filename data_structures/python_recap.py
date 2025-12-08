@@ -13,3 +13,11 @@ for c in s:
     else:
         word_count[c] = 1
 print(word_count)
+
+#Minimum element
+arr3 = [2,3,5,6,1,10]
+minimum_element = arr3[0]
+for i in range(1, len(arr3)-1):
+    if minimum_element <= arr3[i+1]:
+        minimum_element = arr3[i]
+print(f"Minimum Element in {arr3} is {minimum_element}")
