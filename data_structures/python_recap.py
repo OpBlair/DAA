@@ -28,3 +28,10 @@ sum = 0
 for a in range(len(arr4)-1):
 	sum += arr4[a]
 print(f"Sum of elements in {arr4} = {sum}")
+
+#Stable partition
+arr5 = [3, -1, 4, -2, 5]
+positives = [x for x in arr5 if x > 0]
+negatives = [x for x in arr5 if x < 0]
+partitioned = positives + negatives
+print(partitioned)
