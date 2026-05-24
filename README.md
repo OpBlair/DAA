@@ -5,7 +5,7 @@
 ### **Overview**
 
 This repository serves as a comprehensive collection of code implementations, theoretical notes, and analyses related to fundamental algorithms and data structures. It is intended for students, developers, and enthusiasts looking to study, practice, and understand the core principles of **Design and Analysis of Algorithms (DAA)**.
-
+The languages used include **python**, **JavaScript**, **Java**.
 -----
 <!--
 ### **📁 Repository Structure**
